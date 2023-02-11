@@ -42,20 +42,20 @@ public:
         setCursor(Qt::OpenHandCursor);
     }
 
-    void mouseMoveEvent(QGraphicsSceneMouseEvent *event)
-    {
-        if (QLineF(event->screenPos(), event->buttonDownScreenPos(Qt::LeftButton))
-            .length() < QApplication::startDragDistance()) {
-            return;
-        }
+//    void mouseMoveEvent(QGraphicsSceneMouseEvent *event)
+//    {
+//        if (QLineF(event->screenPos(), event->buttonDownScreenPos(Qt::LeftButton))
+//            .length() < QApplication::startDragDistance()) {
+//            return;
+//        }
 
-        QDrag *drag = new QDrag(event->widget());
-        QMimeData *mime = new QMimeData;
-        drag->setMimeData(mime);
+//        QDrag *drag = new QDrag(event->widget());
+//        QMimeData *mime = new QMimeData;
+//        drag->setMimeData(mime);
 
-        drag->exec();
-        setCursor(Qt::OpenHandCursor);
-    }
+//        drag->exec();
+//        setCursor(Qt::OpenHandCursor);
+//    }
 
 private:
     qreal pen_width_{1};

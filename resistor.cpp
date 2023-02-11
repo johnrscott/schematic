@@ -4,6 +4,6 @@
 Resistor::Resistor(QGraphicsItem *parent)
 {
     setToolTip(QString("Click and drag this resistor"));
-        setCursor(Qt::OpenHandCursor);
+    setCursor(Qt::OpenHandCursor);
     setAcceptedMouseButtons(Qt::LeftButton);
 }
