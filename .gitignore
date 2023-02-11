@@ -1,8 +1,3 @@
-*~
-
-# Added to ignore build directory
-build-*
-
 # This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
 
@@ -42,6 +37,7 @@ Thumbs.db
 
 # qtcreator generated files
 *.pro.user*
+CMakeLists.txt.user*
 
 # xemacs temporary files
 *.flc
