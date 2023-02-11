@@ -32,15 +32,15 @@ public:
         painter->drawLine(width_/2, 0, width_/2 + lead_length_, 0);
     }
 
-    void mousePressEvent(QGraphicsSceneMouseEvent *event) override
-    {
-        setCursor(Qt::ClosedHandCursor);
-    }
+//    void mousePressEvent(QGraphicsSceneMouseEvent *event) override
+//    {
+//        setCursor(Qt::ClosedHandCursor);
+//    }
 
-    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override
-    {
-        setCursor(Qt::OpenHandCursor);
-    }
+//    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override
+//    {
+//        setCursor(Qt::OpenHandCursor);
+//    }
 
 //    void mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 //    {

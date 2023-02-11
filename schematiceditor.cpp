@@ -10,6 +10,7 @@ SchematicEditor::SchematicEditor(QWidget *parent)
     connect(ui_->actionNew, &QAction::triggered, this, &SchematicEditor::set_resistor_pos);
     ui_->graphicsView->setScene(&scene_);
     ui_->graphicsView->setAcceptDrops(true);
+    resistor_.setFlags(QGraphicsItem::ItemIsMovable);
 }
 
 SchematicEditor::~SchematicEditor()
